@@ -1,0 +1,177 @@
+.booking-container {
+    margin-top: 64px;
+    padding: 40px 120px;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    min-height: 100vh;
+}
+
+/* CARD LAYOUT */
+.booking-card {
+    display: flex;
+    gap: 40px;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    align-items: flex-start;
+}
+
+/* LEFT */
+.booking-left {
+    flex: 1;
+}
+
+.booking-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.booking-image img:hover {
+    transform: scale(1.02);
+}
+
+/* RIGHT */
+.booking-details {
+    flex: 1;
+}
+
+.booking-details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+/* INFO TAGS */
+.booking-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.booking-info span {
+    background: #eef2ff;
+    color: #3448ff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* DESCRIPTION */
+.description {
+    margin: 10px 0;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+/* SELLER */
+.seller-info {
+    margin: 12px 0;
+    color: #6b7280;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 14px;
+}
+
+/* PRICE */
+#rent-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #111827;
+}
+
+/* FORM */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 14px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-row input:focus {
+    border-color: #3448ff;
+    box-shadow: 0 0 0 2px rgba(52,72,255,0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* BUTTON */
+.book-btn {
+    margin-top: 24px;
+    padding: 14px;
+    background: linear-gradient(135deg, #3448ff, #5b6bff);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(52,72,255,0.3);
+}
+
+/* BACK BUTTON */
+.back-btn {
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 24px;
+}
+
+.back-btn:hover {
+    background: #f3f4f6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .booking-card {
+        flex-direction: column;
+    }
+
+    .booking-container {
+        padding: 20px;
+    }
+
+    .booking-image img {
+        height: 240px;
+    }
+}

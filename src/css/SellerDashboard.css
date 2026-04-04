@@ -1,0 +1,218 @@
+.dashboard-container {
+    padding: 40px 128px;
+    background: #f6f8fc;
+    min-height: 100vh;
+}
+
+/* TITLE */
+.dashboard-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* SELLER BOX */
+.seller-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    padding: 18px 22px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.seller-box img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.seller-box h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.seller-box p {
+    margin: 2px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.primary-btn {
+    margin-left: auto;
+    background: #3b5bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.primary-btn:hover {
+    background: #2f49d1;
+}
+
+.add-vehicle {
+    font-size: 24px;
+}
+
+/* MODAL OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* MODAL */
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 650px;
+    max-width: 95%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+}
+
+/* FORM GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.form-grid input,
+.form-grid select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+    border-color: #3b5bff;
+    box-shadow: 0 0 0 2px rgba(59,91,255,0.15);
+}
+
+/* MODAL BUTTONS */
+.modal-actions {
+    margin-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-actions button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-actions button:first-child {
+    background: #3b5bff;
+    color: white;
+}
+
+
+.modal-actions button:last-child {
+    background: #eee;
+}
+
+/* VEHICLE LIST */
+.vehicle-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* VEHICLE CARD */
+.vehicle-item {
+    display: grid;
+    grid-template-columns: 90px 1fr auto auto;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 14px 18px;
+    border-radius: 14px;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.05);
+}
+
+/* IMAGE */
+.vehicle-item img {
+    width: 90px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* INFO */
+.vehicle-item h3 {
+    margin: 0;
+}
+
+.vehicle-item p, .per-day-price {
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* PRICE */
+.price {
+    font-weight: 600;
+    color: #3b5bff;
+}
+
+/* STATUS */
+.vehicle-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.available {
+    background: #d4f8e8;
+    color: #1ca97c;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.unavailable {
+    background: #ffe2e2;
+    color: #ff4d4d;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* TOGGLE BUTTON */
+.vehicle-actions button {
+    padding: 6px 10px;
+    border: none;
+    background: #eee;
+    border-radius: 6px;
+    cursor: pointer;
+}
